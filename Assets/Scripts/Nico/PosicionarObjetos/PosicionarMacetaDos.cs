@@ -10,6 +10,7 @@ public class PosicionarMacetaDos : MonoBehaviour
         {
             // Posicionar el objeto en el targetTransform
             other.transform.position = transform.position;
+            other.transform.rotation = Quaternion.identity;
             objectName = other.gameObject.name;
             Debug.Log("Nombre del objeto de agua: " + objectName);
             Debug.Log("Maceta 2 posicionada en: " + transform.name);

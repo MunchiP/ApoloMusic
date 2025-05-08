@@ -11,6 +11,7 @@ public class PosicionarAgua : MonoBehaviour
             isAguaColocada = true;
             // Posicionar el objeto con el tag "Agua" en la misma posición del objeto que tiene este collider
             other.transform.position = transform.position;
+            other.transform.rotation = Quaternion.identity;
             Debug.Log("Agua posicionada en la posición: " + transform.position);
         }
     }

@@ -5,14 +5,15 @@ public class AbrirPuertaEscenaUno : MonoBehaviour
 {
      public PosicionarPilar posicionarPilar;
      public PosicionarPilar1 posicionarPilarDos;
-     public CreacionPlanta creacionPlanta;
+     private CreacionPlanta creacionPlanta;
     public Animator anim;
     private String nombreResultante;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        creacionPlanta = GetComponent<CreacionPlanta>();
         nombreResultante = "";
-        anim.SetBool("eso",false);
+        anim.SetBool("Puertapasillo",false);
     }
 
     // Update is called once per frame
@@ -25,8 +26,8 @@ public class AbrirPuertaEscenaUno : MonoBehaviour
         }
     }
     void AbrirPuerta(){
-        if(nombreResultante == "M6M8"){
-            anim.SetBool("eso",true);
+        if(nombreResultante == "M6M8" || nombreResultante == "M8M6"){
+            anim.SetBool("Puertapasillo",true);
             Debug.Log("eso");
         }
     }

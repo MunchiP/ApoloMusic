@@ -11,6 +11,7 @@ public class CreacionPlanta : MonoBehaviour
     private String nombreResultante;
     public bool isCreated1 = false;
     private String nombre1 = "M4M5";
+    private String nombre2 = "M5M4";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,7 +32,8 @@ public class CreacionPlanta : MonoBehaviour
 
     void CrearPlanta()
     {
-        if (nombreResultante == nombre1 && !isCreated1)
+        Debug.Log(nombreResultante);
+        if (nombreResultante == nombre1 && !isCreated1 || nombreResultante == nombre2 && !isCreated1)
         {
             Debug.Log(nombreResultante);
             plantaDefault.SetActive(false);

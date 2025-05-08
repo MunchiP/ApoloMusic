@@ -1,6 +1,7 @@
+using Unity.Mathematics;
 using UnityEngine;
 
-public class PosicionarPilar1 : MonoBehaviour
+public class PosicionarPilar : MonoBehaviour
 {
      public string objectName;
     void OnTriggerEnter(Collider other)
@@ -9,7 +10,9 @@ public class PosicionarPilar1 : MonoBehaviour
         if (other.CompareTag("Maceta") && other.transform.parent == null)
         {
             // Posicionar el objeto en el targetTransform
-            other.transform.position = transform.position;
+            //other.transform.position = transform.position;
+            other.transform.position = new Vector3 (transform.position.x, transform.position.y+.1f, transform.position.z);
+            other.transform.rotation = Quaternion.identity;
             objectName = other.gameObject.name;
             Debug.Log("Nombre de la planta: " + objectName);
             Debug.Log("Matera posicionada en: " + transform.name);
