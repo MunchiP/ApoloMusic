@@ -3,10 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - CinemachineTarget
-  - Maceta
-  - Agua
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -34,7 +31,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - IgnorePlayer
   - 
   - 
   - 
