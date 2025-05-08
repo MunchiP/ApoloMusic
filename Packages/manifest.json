@@ -1,8 +1,5 @@
 {
   "dependencies": {
-<<<<<<< HEAD
-    "com.unity.multiplayer.center": "1.0.0",
-=======
     "com.unity.ai.navigation": "2.0.6",
     "com.unity.collab-proxy": "2.7.1",
     "com.unity.ide.rider": "3.0.35",
@@ -14,7 +11,6 @@
     "com.unity.timeline": "1.8.7",
     "com.unity.ugui": "2.0.0",
     "com.unity.visualscripting": "1.9.6",
->>>>>>> 4354020dbde274d4fc92d0c7d691a963b728d79d
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
