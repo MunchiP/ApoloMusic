@@ -1,11 +1,13 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class MesaDetector : MonoBehaviour
 {
     // Estos serán los colliders de cada uno de los slots
     public Collider colliderAgua;
     public Collider colliderMaceta1;
     public Collider colliderMaceta2;
+    public Collider colliderPilar;
+    public Collider colliderPilar2;
 
     // Método que se llama cuando un objeto entra en el Trigger (Collider)
     void OnTriggerEnter(Collider other)
@@ -29,6 +31,14 @@ public class GameManager : MonoBehaviour
             else if (other == colliderMaceta2)
             {
                 Debug.Log("Maceta 2");
+            }
+            else if (other == colliderPilar)
+            {
+                Debug.Log("Pilar 1");
+            }
+            else if (other == colliderPilar2)
+            {
+                Debug.Log("Pilar 2");
             }
         }
     }

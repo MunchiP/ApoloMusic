@@ -9,8 +9,8 @@ public class CreacionPlanta : MonoBehaviour
     public PosicionarMacetaUno posicionarMacetaUno;
     public PosicionarMacetaDos posicionarMacetaDos;
     private String nombreResultante;
-    private bool isCreated1 = false;
-    private String nombre1 = "MoradoNaranja";
+    public bool isCreated1 = false;
+    private String nombre1 = "M4M5";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,9 +31,9 @@ public class CreacionPlanta : MonoBehaviour
 
     void CrearPlanta()
     {
-                Debug.Log(nombreResultante);
         if (nombreResultante == nombre1 && !isCreated1)
         {
+            Debug.Log(nombreResultante);
             plantaDefault.SetActive(false);
             plantaResultanteUno.SetActive(true);
             nombreResultante = "";
