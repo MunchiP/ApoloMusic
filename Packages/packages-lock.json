@@ -1,5 +1,7 @@
 {
   "dependencies": {
+<<<<<<< HEAD
+=======
     "com.unity.ai.navigation": {
       "version": "2.0.6",
       "depth": 0,
@@ -78,6 +80,7 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+>>>>>>> 4354020dbde274d4fc92d0c7d691a963b728d79d
     "com.unity.multiplayer.center": {
       "version": "1.0.0",
       "depth": 0,
@@ -86,6 +89,8 @@
         "com.unity.modules.uielements": "1.0.0"
       }
     },
+<<<<<<< HEAD
+=======
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.4",
       "depth": 3,
@@ -203,6 +208,7 @@
       },
       "url": "https://packages.unity.com"
     },
+>>>>>>> 4354020dbde274d4fc92d0c7d691a963b728d79d
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
       "depth": 0,
